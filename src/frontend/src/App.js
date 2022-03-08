@@ -1,11 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import { TeamPage } from './pages/TeamPage';
+import {BrowserRouter as Routes, Route} from 'react-router-dom';
+import {TeamPage } from './pages/TeamPage';
 
 function App() {
   return (
     <div className="App">
-      <TeamPage/>
+      <Routes>
+      <Route path="/teams/:teamName">
+        <TeamPage/>
+      </Route>
+      </Routes>
     </div>
   );
 }
