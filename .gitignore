@@ -34,3 +34,6 @@ build/
 
 ### React App ###
 src/frontend/node_modules/
+
+### public folder ###
+src/main/resources/public
